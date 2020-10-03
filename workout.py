@@ -31,7 +31,7 @@ def login():
             access_token = create_access_token(identity=namedata)
             return jsonify(access_token=access_token), 200
         return jsonify({"message": "Invalid password"})
-    return jsonify({"message": "Register First"})
+    return jsonify({"message": "Register First !!"})
 
 
 @app.route("/pro")
